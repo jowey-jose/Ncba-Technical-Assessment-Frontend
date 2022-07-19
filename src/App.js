@@ -39,20 +39,6 @@ const App = () => {
               Home
             </Link>
           </li>
-          {/* {showModeratorBoard && (
-            <li className="nav-item">
-              <Link to={"/mod"} className="nav-link">
-                Moderator Board
-              </Link>
-            </li>
-          )} */}
-          {/* {showAdminBoard && (
-            <li className="nav-item">
-              <Link to={"/admin"} className="nav-link">
-                Admin Board
-              </Link>
-            </li>
-          )} */}
           {currentUser && (
             <li className="nav-item">
               <Link to={"/user"} className="nav-link">
@@ -89,11 +75,8 @@ const App = () => {
           <Route path="/" element={<LandingPage/>} />
           <Route path="/home" element={<LandingPage/>} />
           <Route path="/login" element={<Login/>} />
-          {/* <Route path="/register" element={<Register/>} /> */}
           <Route path="/profile" element={<Profile/>} />
           <Route path="/user" element={<LandingPage/>} />
-          {/* <Route path="/mod" element={<BoardModerator/>} />
-          <Route path="/admin" element={<BoardAdmin/>} /> */}
         </Routes>
       </div>
     </div>
