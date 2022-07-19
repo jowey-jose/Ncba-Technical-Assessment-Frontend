@@ -9,10 +9,6 @@ const LandingPage = () => {
         <div className="container">
             <header className="jumbotron">
                 <h3>Landing Page: NCBA FrontEnd Assessment</h3>
-                {/* <strong>Services List:</strong>
-                <ul>
-                    { content.map((service, index) => <li key={index}>{service}</li>)}
-                </ul> */}
             </header>
         </div>
     );
