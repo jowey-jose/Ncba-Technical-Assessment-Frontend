@@ -5,9 +5,8 @@ import axios from "axios";
 import authHeader from "./auth-header";
 const API_URL = "https://mawingu.cbaloop.com/cba/api/v1/";
 
-// Show Public Content (Home Page)
 
-// Show Services List:
+// Show Services List (Home Page):
 const getServices = () => {
     return axios.get(API_URL + "service/getServices", { headers: authHeader() });
 }
